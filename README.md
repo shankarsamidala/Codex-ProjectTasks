@@ -14,7 +14,7 @@
 ## Task Set 2: APP Creation
 
 1. **APP Setup and URl Configuration:**
-   - Create a new Django apps named "Products", "Home" and "Orders"  .
-   - Create View for Each APP with "HttpResponse".
+   - Create a new Django apps named `Products`, `Home` and `Orders`  .
+   - Create View for Each APP with `HttpResponse`.
    - Configure URLs for all APPs.
 
