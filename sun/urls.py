@@ -16,11 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from fire import views
-from inception.views import venus
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('Fire/',views.sat),
     path('don/',views.mercury),
-    path('man/',venus)
 ]
