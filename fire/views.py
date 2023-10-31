@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 # Create your views here.
-def sat(request):
+def sati(request):
     return HttpResponse('I am God')
 
 def mercury(request):
