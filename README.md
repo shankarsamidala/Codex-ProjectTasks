@@ -17,4 +17,4 @@
    - Create a new Django apps named `Products`, `Home` and `Orders`  .
    - Create View for Each APP with `HttpResponse`.
    - Configure URLs for all APPs.
-
+## Task set 3 :
