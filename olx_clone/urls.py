@@ -18,11 +18,17 @@ from django.urls import path
 from products.views import ProductList
 from home.views import Home
 from orders.views import OrderList
+from mobiles.views import MobileList
+from electronics.views import ElectronicList
+from furniture.views import FurnitureList
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',Home),
     path('products/', ProductList),
+    path('electronics/', ElectronicList),
+    path('furniture/', FurnitureList),
+    path('mobiles/', MobileList),
     path('orders/', OrderList),
     
     
