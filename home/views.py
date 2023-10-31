@@ -2,7 +2,5 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 # Create your views here.
-
-def ProductPage(request):
-     return HttpResponse('Productspage')
-
+def homepage(request):
+     return HttpResponse('Homepage')
