@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from products.views import Product
 from Home.views import Homepage
+from license.views import license
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('products/',Product),
-    path('Home/p',Homepage)
+    path('Home',Homepage),
+    path('license',license)
 ]
