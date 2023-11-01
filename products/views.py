@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import productsList
+
 # Create your views here.
 def ProductPage(request):
-    return HttpResponse('Product page Response')
+    return(request,'products.html')
