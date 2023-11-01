@@ -17,11 +17,13 @@ from django.contrib import admin
 from django.urls import path
 from products.views import Products
 from homepage.views import Home
+from orders.views import Order
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('Products/',Products),
-    path('',Home)
+    path('',Home),
+    path('order/',Order)
 ]
 
