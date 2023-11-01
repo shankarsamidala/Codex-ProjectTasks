@@ -3,6 +3,6 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def products(request):
-    return HttpResponse(' welcome to products page')
+def products (request):
+    return render(request,'products.html')
 
