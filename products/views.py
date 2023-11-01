@@ -6,5 +6,4 @@ from django.http import HttpResponse
 
 
 def ProductList(request):
-    return HttpResponse('Products page')
-
+    return render(request,'products.html')
