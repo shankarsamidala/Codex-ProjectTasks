@@ -5,4 +5,4 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def OrderPage(request):
-    return HttpResponse('order')
+    return HttpResponse('Welcome to orderpage')

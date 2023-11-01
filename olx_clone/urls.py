@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from products.views import ProductPage
-from products.views import HomePage
+from HomePage.views import HomePage
 from order.views import OrderPage
 
 urlpatterns = [
