@@ -1,0 +1,27 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alian Space Ship</title>
+ </head>
+ <body>
+    {% for i in itter %}
+       <ol>
+          <li>
+              Name:{{i.Name}}
+          </li>
+          <li>
+             Spaceship:{{i.Spaceship}}
+          </li>
+          <li>
+             model :{{i.model}}
+          </li>
+          <li>
+             price:{{i.Price}}
+          </li>
+       </ol>
+    {% endfor %}
+
+ </body>
+ </html>
