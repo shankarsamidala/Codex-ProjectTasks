@@ -1,11 +1,13 @@
 from django.db import models
-from datetime import datetime
+import datetime
 # Create your models here.
 
 
 class ProductsList(models.Model):
     name = models.CharField(max_length=250)
     tag = models.CharField(max_length=250)
-    price = models.IntegerField()
+    price = models.IntegerField(default=100)
     rating = models.IntegerField(default=0)
-    created_at = datetime.now()
+
+    def __str__(self):
+        return self.name

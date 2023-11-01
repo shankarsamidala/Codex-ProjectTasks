@@ -7,5 +7,21 @@
 </head>
 <body>
     <h1><style> </style> this is INDEXPAGE</h1>
+    {% for x in data %}
+     <ol>
+        <li>
+            name={{x.name}}
+        </li>
+        <li>
+            tag={{x.tag}}
+        </li>
+        <li>
+            price={{x.price}}
+        </li>
+        <li>
+            rating={{x.rating}}
+        </li>
+     </ol>
+     {% endfor %}
 </body>
 </html>
