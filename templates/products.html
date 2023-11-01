@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLX-PRODUCTS</title>
+</head>
+<body>
+
+    {% for i in data %}  
+    <ol type="1">
+        <li>
+            title:{{i.title}}
+        </li>
+        <li>
+            tag:{{i.tag}}
+        </li>
+        <li>
+            price:{{i.price}}
+        </li>
+        <li>
+            rating:{{i.rating}}
+        </li>
+        <li>
+            date:{{i.created_at}}
+        </li>
+    </ol>
+    {% endfor %}
+</body>
+</html>
