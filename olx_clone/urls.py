@@ -20,7 +20,7 @@ from home.views import Home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', Home),
+    path('home/', Home),
     path('products/',ProductList),
 
 ]
