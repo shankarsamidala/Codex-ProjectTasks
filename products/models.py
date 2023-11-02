@@ -7,4 +7,4 @@ class ProductList(models.Model):
     tag = models.CharField(max_length=250)
     price = models.IntegerField()
     rating = models.IntegerField()
-    created_at = datetime.now()
+    created_at = DateTimefield(default=datetime.now())
