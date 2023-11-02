@@ -9,5 +9,6 @@ class productsList(models.Model):
      rating=models.IntegerField(max_length=250)
      create_at=models.DateTimeField(default=datetime.now())
 
+
      def __str__ (self):
          return self.name 
