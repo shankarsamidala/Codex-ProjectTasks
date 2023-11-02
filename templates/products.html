@@ -6,12 +6,15 @@
     <title>olx_products</title>
 </head>
 <body>
+    {% for i in data %}
     <ol>
-        <li>title:</li>
-        <li>price:</li>
-        <li>rating:</li>
-        <li>tag:</li>
-        <li>date:</li>
+        <li>title:{{i.title}}</li>
+        <li>price:{{i.price}}</li></li>
+        <li>rating:{{i.rating}}</li></li>
+        <li>tag:{{i.tag}}</li></li>
+        <li>date:{{i.date}}</li>
+        
     </ol>
+    {% endfor %}
 </body>
 </html>
