@@ -14,13 +14,18 @@
         tag
 
     -->
+    {% for i in data %}
 
     <ol>
-        <li>title</li>
-        <li>price</li>
-        <li>rating</li>
-        <li>date</li> <li>tag</li>
-
+        <li>title:{{i.title}}</li>
+        <li>model:{{i.price}}</li>
+        <li>price:{{i.price}}</li>
+        <li>rating:{{i.rating}}</li>
+        <li>milage:{{i.price}}</li>
+        <li>date:{{i.date}}</li>
+        <li>tag:{{i.tag}}</li>
     </ol>
+
+    {% endfor %}
 </body>
 </html>
