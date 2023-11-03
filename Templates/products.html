@@ -6,21 +6,23 @@
     <title>flipkart- products</title>
 </head>
 <body>
+    {% for i in data %}
     <ol>
         <li>
-            title:
+            title:{{i.title}}
         </li>
-        <li>price:
+        <li>price:{{i.price}}
                 </li>
                 <li>
-                    tag:
+                    tag:{{i.tag}}
                     </li>
                     <li>
-                        rating:
+                        rating:{{i.rating}}
                         </li>
                          <li>
-                            date:
+                            date:{{i.date}}
                             </li>
         </ol>
+        {% endfor %}
 </body>
 </html>

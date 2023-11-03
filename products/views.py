@@ -5,5 +5,11 @@ from .models import ProductList
 
 
 
-def ProductList(request):
-    return render(request,'products.html')
+def Product_List(request):
+    data= ProductList.objects.all()
+    print('Data From Products Table',data)
+
+    content={
+        'data': data
+    }
+    return render(request,'products.html',context=content)
