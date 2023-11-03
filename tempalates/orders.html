@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>orders_list</title>
+</head>
+<body>
+    <h1 style="text-align:center;color:black;">orders.....</h1>
+    {% for i in data %}
+    <ol><li>{{i.id}}</li>
+        <li>{{i.product.title}}</li>
+        <li>{{i.product.price}}</li>
+        <li>{{i.product.tag}}</li>
+        <li>{{i.product.rating}}</li>
+    </ol>
+    {% endfor %}
+</body>
+</html>
