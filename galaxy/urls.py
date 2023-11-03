@@ -16,11 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from venus.views import sat,gat
-from mercury.views import mat
+from mercury.views import cil
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('sat/',sat),
-    path('mat/',mat),
     path('gat/',gat),
+    path('cil/',cil),
 ]
