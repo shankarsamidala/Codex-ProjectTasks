@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>olx_clone</title>
+    <title>project1</title>
 </head>
 <body>
-    <ol>
+    {% for i in data %}
+    <ol type="1">
         <li>
-            title:
+            name:{{ i.name }}
         </li>
         <li>
-            tag:
+            model:{{ i.model }}
         </li>
         <li>
-            price:
+            tag:{{ i.tag }}
         </li>
         <li>
-            rating:
+            price:{{ i.price }}
+        </li>
+        <li>
+            rating:{{ i.rating }}
         </li>
     </ol>
+    {%  endfor %}
+    
     
 </body>
 </html>
