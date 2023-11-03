@@ -6,19 +6,21 @@
     <title>productslist</title>
 </head>
 <body>
-   <ol>
+    {% for i in data %}
+   <ol type = '1'>
     <li>
-        title:
+        title:{{i.title}}
     </li>
     <li>
-        price:
+        price:{{i.price}}
     </li>
     <li>
-        rating:
+        rating:{{i.rating}}
     </li>
     <li>
-        date:
+        date:{{i.date}}
     </li>
    </ol> 
+   {% endfor %}
 </body>
 </html>
