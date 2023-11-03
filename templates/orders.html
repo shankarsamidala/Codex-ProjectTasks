@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>olx_clone</title>
+</head>
+<body>
+    <!--
+        title,
+        price,
+        rating,
+        date,
+        tag
+
+    -->
+    {% for i in data %}
+
+    <ol>
+        <li>title:{{i.title}}</li>
+        <li>model:{{i.price}}</li>
+        <li>price:{{i.price}}</li>
+        <li>rating:{{i.rating}}</li>
+        <li>milage:{{i.price}}</li>
+        <li>date:{{i.date}}</li>
+        <li>tag:{{i.tag}}</li>
+    </ol>
+
+    {% endfor %}
+</body>
+</html>
