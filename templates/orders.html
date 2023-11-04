@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>olxclone</title>
+</head>
+<body>
+    <h1 style="text-align:center;color:aliceblue;">orders</h1>
+    {% for i in data %}
+    <ul>
+        <li> title:{{i.product.title}}</li>
+        <li>price{{i.product.price}}</li>
+        <li>tag{{i.product.tag}}</li>
+        <li>date{{i.product.date}}</li>
+        <li>rating{{i.product.rating}}</li>
+    </ul>
+
+    {% endfor %}
+</body>
+</html>
