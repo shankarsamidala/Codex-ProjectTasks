@@ -7,11 +7,13 @@
 </head>
 <body>
     <h1 style="text-align: center;color:crimson;">Welcome</h1>
+    {% for i in data %}
     <ol>
-        <li>Title :</li>
-        <li>Place :</li>
-        <li>Price :</li>
-        <li>Ratings :</li>
+        <li>Title :{{i.Title}}</li>
+        <li>Place :{{i.Place}}</li>
+        <li>Price :{{i.Price}}</li>
+        <li>Ratings :{{i.Ratings}}</li>
     </ol>
+    {% endfor %}
 </body>
 </html>

@@ -8,3 +8,5 @@ class productlist(models.Model):
     Price=models.IntegerField()
     Ratings=models.IntegerField(default=0)
 
+    def __str__(self):
+        return self.Title
