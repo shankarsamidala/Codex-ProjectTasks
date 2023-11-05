@@ -1,13 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import productlist
+from .models import orderlist
 # Create your views here.
 
-def product_list(request):
-    data= productlist.objects.all()
+def order_list(request):
+    data= orderlist.objects.all()
     print('Data From Products Table',data)
 
     content={
         'data': data
     }
-    return render(request,'products.html',context=content)
+    return render(request,'orders.html',context=content)
