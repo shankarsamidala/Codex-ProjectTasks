@@ -6,5 +6,5 @@ class productList(models.Model):
     price = models.IntegerField(default=0)
     tag = models.CharField(max_length=250)
     rating = models.CharField(max_length=250)
-    modelname=models.CharField(max_length=250,default=0)
+    modelname=models.CharField(max_length=250)
 

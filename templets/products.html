@@ -6,13 +6,15 @@
     <title>olx_clone</title>
 </head>
 <body>
-    <h1 style="text_align:center">products page </h1>
+
+    {% for Products in data %} 
 
     <ul>
-        <li>title</li>
-        <li>price</li>
-        <li>tag</li>
-        <li>rating</li>
+        <li>product name : {{ Products.title }} </li>
+        <li>price : {{ Products.price }}</li>
+        <li>tag : {{Products.tag }}</li>
+        <li>rating:{{Products.rating}}</li>
     </ul>
+    {% endfor %}
 </body>
 </html>
