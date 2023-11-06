@@ -3,25 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OLX-Produts</title>
+    <title>Document</title>
 </head>
 <body>
+    <h1 style="text-align:center; color:aliceblue;">Orders!!!!!></h1>
     {% for i in data %}
     <ol>
         <li>
-            Name:{{i.name}}
+            Name:{{i.Product.name}}
         </li>
         <li>
-            price:{{i.price}}
+            price:{{i.Product.price}}
         </li>
         <li>
-            rating:{{i.rating}}
+            rating:{{i.Product.rating}}
         </li>
         <li>
-            date:{{i.date}}
-        </li>
-        <li>
-            tag:{{i.tag}}
+            tag:{{i.Product.tag}}
         </li>
     </ol>
     {% endfor %}
