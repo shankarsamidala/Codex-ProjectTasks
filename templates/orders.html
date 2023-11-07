@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders page</title>
+</head>
+<body>
+    <h1> Orders</h1>
+        {% for i in data %}
+        
+       <ol>
+        
+        <li> {{i.Product.title}}</li>
+        <li> model:{{i.Product.model}}</li>
+        <li> rating:{{i.Product.rating}}</li>
+        <li> price:{{i.Product.price}}</li>
+        <li> tag:{{i.Product.tag}}</li>
+       </ol>
+       {%  endfor %}
+
+</body>
+</html>
