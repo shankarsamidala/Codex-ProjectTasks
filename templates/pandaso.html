@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pandaso</title>
+</head>
+<body>
+   {%for i in data%}
+    <ol>
+        <li>
+          {{ i.pandasp.name}}
+        </li>
+        <li>
+           {{ i.pandasp.tag}}
+        </li>
+        <li>
+           {{ i.pandasp.rating}}
+        </li>
+        <li>
+          {{ i.pandasp.price}}
+        </li>
+        {% endfor %}
+    </ol>
+   
+</body>
+</html>
